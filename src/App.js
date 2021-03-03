@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Col, Row } from 'react-bootstrap';
+import Cards from './Cards/Cards';
+import Carousels from './components/Carousels/Carousels';
+import Footer from './components/Footer/Footer';
+import Forms from './components/Forms/Forms';
+import Header from './components/Header/Header';
+import Layout from './components/Layout/Layout';
+import Modals from './components/Modals/Modals';
+import Paginations from './components/Paginations/Paginations';
+import logo from './logo.svg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+      <Header />
+      {/* <Carousels /> */}
+      <Layout />
+      <Cards />
+      <Paginations />
+      <Modals />
+      <Forms />
+      <Footer />
+    </>
   );
 }
 
